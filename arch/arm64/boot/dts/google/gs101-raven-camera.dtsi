@@ -208,6 +208,8 @@
 					 1000
 					 1000>;
 				transaction-thread-priority = <99>;
+
+				i2c-lock-group-id = <0>;
 			};
 
 			/* FRONT CAMERA IMX663 */
@@ -281,6 +283,8 @@
 					 1000
 					 1000>;
 				transaction-thread-priority = <99>;
+
+				i2c-lock-group-id = <1>;
 			};
 
 			/* REAR ULTRA WIDE CAMERA IMX386 */
@@ -354,6 +358,8 @@
 					 3000
 					 1000>;
 				transaction-thread-priority = <99>;
+
+				i2c-lock-group-id = <2>;
 			};
 
 			/* REAR CAMERA IMX586 */
@@ -445,6 +451,8 @@
 					 1000
 					 1000>;
 				transaction-thread-priority = <99>;
+
+				i2c-lock-group-id = <3>;
 			};
 
 			/* Eeprom lc898128 for gn1*/
@@ -494,6 +502,8 @@
 					<2000
 					 1000
 					 1000>;
+
+				i2c-lock-group-id = <0>;
 			};
 
 			/* Eeprom m24c64x for imx663 */
@@ -532,6 +542,8 @@
 					"regulator";
 				power-down-seq-delays-us =
 					<1000>;
+
+				i2c-lock-group-id = <1>;
 			};
 
 			/* Eeprom m24c64x for imx386 */
@@ -570,6 +582,8 @@
 					"regulator";
 				power-down-seq-delays-us =
 					<1000>;
+
+				i2c-lock-group-id = <2>;
 			};
 
 			/* Eeprom sem1215sa for imx586*/
@@ -619,6 +633,8 @@
 					<1000
 					 4000
 					 1000>;
+
+				i2c-lock-group-id = <3>;
 			};
 
 			/* Actuator ak7377 for gn1*/
@@ -671,6 +687,8 @@
 
 				/* Thread priority */
 				periodic-io-thread-priority = <99>;
+
+				i2c-lock-group-id = <0>;
 			};
 
 			/* Actuator sem1215sa for imx586*/
@@ -723,6 +741,8 @@
 
 				/* Thread priority */
 				periodic-io-thread-priority = <99>;
+
+				i2c-lock-group-id = <3>;
 			};
 
 			/* Ois lc898128 for gn1*/
@@ -775,6 +795,8 @@
 
 				/* Thread priority */
 				periodic-io-thread-priority = <99>;
+
+				i2c-lock-group-id = <0>;
 			};
 
 			/* Ois sem1215sa for imx586*/
@@ -827,6 +849,8 @@
 
 				/* Thread priority */
 				periodic-io-thread-priority = <99>;
+
+				i2c-lock-group-id = <3>;
 			};
 
 			flash0: flash@0 {
