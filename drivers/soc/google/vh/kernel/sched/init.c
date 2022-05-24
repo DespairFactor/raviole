@@ -63,6 +63,9 @@ extern void android_vh_show_max_freq(void *unused, struct cpufreq_policy *policy
 
 extern void vh_sched_setaffinity_mod(void *data, struct task_struct *task,
 					const struct cpumask *in_mask, int *skip);
+					
+extern void vh_dump_throttled_rt_tasks_mod(void *data, int cpu, u64 clock, ktime_t rt_period,
+					   u64 rt_runtime, s64 rt_period_timer_expires);
 
 extern struct cpufreq_governor sched_pixel_gov;
 
@@ -184,6 +187,9 @@ static int vh_sched_init(void)
 		return ret;
 
 	ret = register_trace_android_vh_sched_setaffinity_early(vh_sched_setaffinity_mod, NULL);
+
+	ret = register_trace_android_vh_dump_throttled_rt_tasks(vh_dump_throttled_rt_tasks_mod,
+								NULL);
 	if (ret)
 		return ret;
 
