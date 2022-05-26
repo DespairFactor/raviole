@@ -69,6 +69,8 @@ extern void vh_dump_throttled_rt_tasks_mod(void *data, int cpu, u64 clock, ktime
 					   u64 rt_runtime, s64 rt_period_timer_expires);
 
 extern void vh_try_to_freeze_todo_logging_pixel_mod(void *data, bool *logging_on);
+extern void rvh_cpumask_any_and_distribute(void *data, struct task_struct *p,
+	const struct cpumask *cpu_valid_mask, const struct cpumask *new_mask, int *dest_cpu);
 
 extern struct cpufreq_governor sched_pixel_gov;
 
@@ -198,6 +200,11 @@ static int vh_sched_init(void)
 
 	ret = register_trace_android_vh_try_to_freeze_todo_logging(
 		vh_try_to_freeze_todo_logging_pixel_mod, NULL);
+	if (ret)
+		return ret;
+
+	ret = register_trace_android_rvh_cpumask_any_and_distribute(
+		rvh_cpumask_any_and_distribute, NULL);
 	if (ret)
 		return ret;
 
