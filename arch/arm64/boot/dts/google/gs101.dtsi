@@ -1439,6 +1439,7 @@
 		i_max = <2>;
 		integral_cutoff = <10>;
 		sustainable_power = <2000>;
+		control_temp_step = <100>;
 
 		tmu_work_affinity = "0-7";
 		hotplug_work_affinity = "0-3";
@@ -1464,6 +1465,7 @@
 		i_max = <5>;
 		integral_cutoff = <20>;
 		sustainable_power = <1000>;
+		control_temp_step = <100>;
 
 		tmu_work_affinity = "0-7";
 		hotplug_work_affinity = "0-3";
@@ -1489,6 +1491,7 @@
 		i_max = <5>;
 		integral_cutoff = <20>;
 		sustainable_power = <200>;
+		control_temp_step = <100>;
 
 		tmu_work_affinity = "0-7";
 	};
@@ -1512,6 +1515,7 @@
 		i_max = <5>;
 		integral_cutoff = <20>;
 		sustainable_power = <200>;
+		control_temp_step = <100>;
 
 		tmu_work_affinity = "0-7";
 		has-dfs-support;
@@ -1549,6 +1553,7 @@
 		i_max = <5>;
 		integral_cutoff = <20>;
 		sustainable_power = <200>;
+		control_temp_step = <100>;
 
 		tmu_work_affinity = "0-7";
 		has-dfs-support;
