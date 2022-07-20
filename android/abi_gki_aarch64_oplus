@@ -817,7 +817,7 @@
   drm_writeback_queue_job
   drm_writeback_signal_completion
   dump_stack
-  __dynamic_pr_debug
+  
   edac_device_add_device
   edac_device_alloc_ctl_info
   edac_device_alloc_index

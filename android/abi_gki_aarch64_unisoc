@@ -83,7 +83,7 @@
   dma_set_coherent_mask
   dma_set_mask
   driver_unregister
-  __dynamic_dev_dbg
+  
   find_next_bit
   finish_wait
   generic_handle_irq

@@ -855,8 +855,8 @@
   drm_wait_one_vblank
   dst_release
   dump_stack
-  __dynamic_dev_dbg
-  __dynamic_pr_debug
+  
+  
   edac_device_add_device
   edac_device_alloc_ctl_info
   edac_device_alloc_index

@@ -88,8 +88,8 @@
   __drm_printfn_seq_file
   __drm_puts_coredump
   __drm_puts_seq_file
-  __dynamic_dev_dbg
-  __dynamic_pr_debug
+  
+  
   __ethtool_get_link_ksettings
   __fdget
   __flush_icache_range
