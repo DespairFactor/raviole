@@ -597,4 +597,4 @@ config VIDEO_RCAR_DRIF
 
 endif # SDR_PLATFORM_DRIVERS
 
-source "drivers/media/platform/bigocean/Kconfig"
+#source "drivers/media/platform/bigocean/Kconfig"
