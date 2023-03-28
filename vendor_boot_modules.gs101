@@ -16,7 +16,6 @@ aoc_uwb_service_dev.ko
 arm-memlat-mon.ko
 arm_dsu_pmu.ko
 at24.ko
-audiometrics.ko
 bbd.ko
 bc_max77759.ko
 bcm47765.ko
@@ -126,7 +125,6 @@ phy-exynos-mipi-dsim.ko
 phy-exynos-mipi.ko
 phy-exynos-usbdrd-super.ko
 pinctrl-samsung-core.ko
-pixel-boot-metrics.ko
 pixel-debug-test.ko
 pixel_em.ko
 pixel_stat_mm.ko
